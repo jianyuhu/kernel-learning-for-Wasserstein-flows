@@ -1,4 +1,4 @@
-## Kernel Learning for Wasserstein Geometric Flows
+# Kernel Learning for Wasserstein Geometric Flows
 
 Official implementation of the numerical experiments reported in the paper “A Kernel Method for the Learning of Wasserstein Geometric Flows”.
 
@@ -13,7 +13,7 @@ The code includes experiments on:
 * Sparse learning methods based on local basis representations
 
 
-# Repository Structure
+## Repository Structure
 
 Wasserstein gradient flow
 
@@ -47,7 +47,7 @@ Wasserstein Hamiltonian flow/
 └── data/
 
 
-# Requirements
+## Requirements
 
 The main dependencies are:
 
@@ -60,7 +60,7 @@ jupyter
 tqdm
 
 
-# Running the Experiments
+## Running the Experiments
 
 Wasserstein Gradient Flow
 
@@ -89,7 +89,7 @@ ex3_4_kernel.ipynb
 ex3_4_sparse.ipynb
 
 
-# Numerical Experiments
+## Numerical Experiments
 
 The repository reproduces all numerical experiments presented in the paper, including:
 
