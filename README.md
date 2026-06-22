@@ -17,34 +17,11 @@ The code includes experiments on:
 
 Wasserstein gradient flow
 
-Numerical experiments for recovering interaction potentials in Wasserstein gradient flows.
-
-Wasserstein gradient flow/
-├── data_generation.ipynb
-├── ex1_kernel_Adelta.ipynb
-├── ex1_kernel_flux.ipynb
-├── ex1_sparse.ipynb
-├── ex2_kernel_Adelta.ipynb
-├── ex2_kernel_flux.ipynb
-├── ex2_sparse.ipynb
-├── figures_data/
-├── figures_kernel_Adelta/
-├── figures_kernel_flux/
-├── figures_sparse/
-└── data/
+Numerical experiments for recovering interaction potentials in Wasserstein gradient flows (data generation and learning).
 
 Wasserstein Hamiltonian flow
 
-Numerical experiments for recovering external potentials in Wasserstein Hamiltonian flows.
-
-Wasserstein Hamiltonian flow/
-├── data_generation.ipynb
-├── ex3_4_kernel.ipynb
-├── ex3_4_sparse.ipynb
-├── figures/
-├── figures_highly_nonconvex/
-├── figures_polynomial/
-└── data/
+Numerical experiments for recovering external potentials in Wasserstein Hamiltonian flows (data generation and learning).
 
 
 ## Requirements
