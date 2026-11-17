@@ -77,3 +77,14 @@ The repository reproduces all numerical experiments presented in the paper, incl
 * Recovery of external potentials in Wasserstein Hamiltonian flows
 * Highly non-convex and polynomial potential examples
 
+## Experiments in the revised manuscript
+
+The notebooks in `New experiments/` correspond to Examples 1–4 of the revised manuscript:
+
+- `Example 1.ipynb`: Joint recovery of external and interaction potentials in a one-dimensional Wasserstein gradient flow.
+- `Example 2.ipynb`: A nonstationary gradient-flow trajectory with an unobservable interaction component.
+- `Example 3.ipynb`: Joint recovery in a two-dimensional Wasserstein Hamiltonian flow.
+- `Example 4.ipynb`: A nonstationary Hamiltonian trajectory with unobservable interaction components.
+
+Examples 3–4 use observations of both the density and the velocity potential. The original experiment folders are retained for reference.
+
