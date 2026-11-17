@@ -1,90 +1,62 @@
 # Kernel Learning for Wasserstein Geometric Flows
 
-Official implementation of the numerical experiments reported in the paper “A Kernel Method for the Learning of Wasserstein Geometric Flows”.
+Code accompanying the paper “A Kernel Method for the Learning of Wasserstein Geometric Flows”.
 
-This repository contains the implementation of the proposed RKHS-based kernel learning framework for recovering interaction laws and energy functionals in Wasserstein geometric flows.
+This repository implements an RKHS-based learning framework for recovering external and interaction potentials in Wasserstein gradient and Hamiltonian flows.
 
-The code includes experiments on:
+## Experiments in the Revised Manuscript
 
-* Wasserstein gradient flows
-* Wasserstein Hamiltonian flows
-* Flux-based variational formulations
-* $A^\delta$-based variational formulations
-* Sparse learning methods based on local basis representations
+The notebooks in `New experiments/` correspond to Examples 1–4 of the revised manuscript. Both potentials are treated as unknown in all four examples.
 
+| Notebook | Experiment |
+| --- | --- |
+| `Example 1.ipynb` | Joint recovery in a one-dimensional Wasserstein gradient flow |
+| `Example 2.ipynb` | A nonstationary gradient-flow trajectory with an unobservable interaction component |
+| `Example 3.ipynb` | Joint recovery in a two-dimensional Wasserstein Hamiltonian flow |
+| `Example 4.ipynb` | A nonstationary Hamiltonian trajectory with unobservable interaction components |
+
+Examples 1–2 use density observations. Examples 3–4 use observations of both the density and the velocity potential.
+
+The experiments report potential reconstruction errors separately from observation-equation residuals.
 
 ## Repository Structure
 
-Wasserstein gradient flow
+- `New experiments/`: Examples 1–4 of the revised manuscript.
+- `Wasserstein gradient flow/`: Experiments from the previous manuscript version, including interaction-potential recovery, flux-based and A-delta-based formulations, and sparse-learning comparisons.
+- `Wasserstein Hamiltonian flow/`: External-potential recovery and sparse-learning experiments from the previous manuscript version.
 
-Numerical experiments for recovering interaction potentials in Wasserstein gradient flows (data generation and learning).
-
-Wasserstein Hamiltonian flow
-
-Numerical experiments for recovering external potentials in Wasserstein Hamiltonian flows (data generation and learning).
-
+The original experiment folders are retained for reference. Their example numbering refers to the previous manuscript version.
 
 ## Requirements
 
 The main dependencies are:
 
-numpy
-scipy
-matplotlib
-pandas
-scikit-learn
-jupyter
-tqdm
-
+- numpy
+- scipy
+- matplotlib
+- pandas
+- scikit-learn
+- jupyter
+- tqdm
 
 ## Running the Experiments
 
-Wasserstein Gradient Flow
+### Revised Manuscript
 
-1. Generate the training data:
+Open the corresponding notebook in `New experiments/` and follow its instructions.
 
-data_generation.ipynb
+### Previous Manuscript Version
 
-2. Run the corresponding notebooks:
+For the original gradient-flow experiments, first run `data_generation.ipynb` in `Wasserstein gradient flow/`, then run the desired notebook:
 
-ex1_kernel_Adelta.ipynb
-ex1_kernel_flux.ipynb
-ex1_sparse.ipynb
-ex2_kernel_Adelta.ipynb
-ex2_kernel_flux.ipynb
-ex2_sparse.ipynb
+- `ex1_kernel_Adelta.ipynb`
+- `ex1_kernel_flux.ipynb`
+- `ex1_sparse.ipynb`
+- `ex2_kernel_Adelta.ipynb`
+- `ex2_kernel_flux.ipynb`
+- `ex2_sparse.ipynb`
 
-Wasserstein Hamiltonian Flow
+For the original Hamiltonian-flow experiments, first run `data_generation.ipynb` in `Wasserstein Hamiltonian flow/`, then run:
 
-1. Generate the training data:
-
-data_generation.ipynb
-
-2. Run:
-
-ex3_4_kernel.ipynb
-ex3_4_sparse.ipynb
-
-
-## Numerical Experiments
-
-The repository reproduces all numerical experiments presented in the paper, including:
-
-* Recovery of compactly supported interaction kernels
-* Comparison between flux-based and $A^\delta$-based formulations
-* Recovery under coarse spatio-temporal observations
-* Sparse learning baselines with local basis representations
-* Recovery of external potentials in Wasserstein Hamiltonian flows
-* Highly non-convex and polynomial potential examples
-
-## Experiments in the revised manuscript
-
-The notebooks in `New experiments/` correspond to Examples 1–4 of the revised manuscript:
-
-- `Example 1.ipynb`: Joint recovery of external and interaction potentials in a one-dimensional Wasserstein gradient flow.
-- `Example 2.ipynb`: A nonstationary gradient-flow trajectory with an unobservable interaction component.
-- `Example 3.ipynb`: Joint recovery in a two-dimensional Wasserstein Hamiltonian flow.
-- `Example 4.ipynb`: A nonstationary Hamiltonian trajectory with unobservable interaction components.
-
-Examples 3–4 use observations of both the density and the velocity potential. The original experiment folders are retained for reference.
-
+- `ex3_4_kernel.ipynb`
+- `ex3_4_sparse.ipynb`
